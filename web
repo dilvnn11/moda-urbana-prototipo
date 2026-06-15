@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MODA URBANO | Ropa Urbana Hombre & Mujer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0d0d;--surface:#111;--s2:#1a1a1a;--pink:#ff005c;--cyan:#00e5ff;--green:#00b37e;--text:#f0f0f0;--muted:#777;--border:rgba(255,255,255,0.07);--r:14px}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.5;overflow-x:hidden}
+
+/* ANNOUNCEMENT */
+.ann{background:var(--pink);color:#fff;padding:9px 0;font-size:.78rem;font-weight:700;letter-spacing:2px;overflow:hidden;white-space:nowrap}
+.ann span{display:inline-block;animation:marquee 24s linear infinite}
+@keyframes marquee{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:900;background:rgba(13,13,13,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.hdr{max-width:1380px;margin:0 auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 24px;height:66px}
+.nav-l,.nav-r{display:flex;align-items:center;gap:4px}
+.nav-r{justify-content:flex-end}
+.logo{text-align:center;font-family:'Space Grotesk',sans-serif;font-size:1.55rem;font-weight:700;color:#fff;text-decoration:none;letter-spacing:-.5px}
+.logo em{background:linear-gradient(90deg,var(--pink),var(--cyan));-webkit-background-clip:text;color:transparent;font-style:normal}
+.nl{color:#bbb;text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:.4px;padding:7px 10px;border-radius:8px;transition:color .2s,background .2s;white-space:nowrap;cursor:pointer;border:none;background:none}
+.nl:hover{color:#fff;background:rgba(255,255,255,.06)}
+.nl.hot{color:var(--pink)}
+.dd{position:relative}
+.ddmenu{position:absolute;top:calc(100% + 6px);left:0;background:#161616;border:1px solid var(--border);border-radius:12px;padding:6px 0;min-width:190px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;box-shadow:0 20px 40px rgba(0,0,0,.7);z-index:999}
+.dd:hover .ddmenu{opacity:1;pointer-events:all;transform:translateY(0)}
+.ddmenu a{display:block;color:#aaa;text-decoration:none;font-size:.8rem;font-weight:500;padding:8px 16px;transition:color .15s,background .15s}
+.ddmenu a:hover{color:#fff;background:rgba(255,255,255,.05)}
+.ddlabel{font-size:.65rem;font-weight:800;color:var(--pink);letter-spacing:1.5px;padding:8px 16px 2px;text-transform:uppercase}
+.ddgrp{border-top:1px solid var(--border);padding-top:4px;margin-top:4px}
+.ddgrp:first-child{border:none;margin:0}
+.cartbtn{background:var(--pink);color:#fff;border:none;cursor:pointer;font-size:.78rem;font-weight:800;letter-spacing:.5px;padding:9px 18px;border-radius:50px;display:flex;align-items:center;gap:7px;transition:transform .2s,background .2s}
+.cartbtn:hover{transform:scale(1.04);background:#d40049}
+.cc{background:#fff;color:var(--pink);width:18px;height:18px;border-radius:50%;font-size:.68rem;font-weight:900;display:flex;align-items:center;justify-content:center}
+.iconbtn{background:none;border:none;cursor:pointer;color:#bbb;font-size:1rem;padding:8px;border-radius:8px;transition:color .2s,background .2s}
+.iconbtn:hover{color:#fff;background:rgba(255,255,255,.06)}
+.auth-btn{background:rgba(255,255,255,.07);border:1px solid var(--border);color:#ccc;font-size:.76rem;font-weight:600;padding:7px 14px;border-radius:50px;cursor:pointer;transition:all .2s;white-space:nowrap}
+.auth-btn:hover{background:rgba(255,255,255,.12);color:#fff}
+.auth-btn.logged{background:rgba(0,229,255,.08);border-color:rgba(0,229,255,.2);color:var(--cyan)}
+
+/* HERO */
+.hero{position:relative;min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hbg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=2000&q=80') center/cover no-repeat}
+.hbg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,13,.35) 0%,rgba(13,13,13,.88) 100%)}
+.hcont{position:relative;z-index:2;padding:0 20px}
+.eyebrow{display:inline-block;background:var(--pink);color:#fff;font-size:.7rem;font-weight:800;letter-spacing:3px;padding:5px 16px;border-radius:50px;margin-bottom:22px}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(3rem,9vw,8rem);font-weight:700;line-height:.93;letter-spacing:-2px;margin-bottom:22px;color:#fff}
+.hero h1 span{background:linear-gradient(90deg,var(--pink),var(--cyan));-webkit-background-clip:text;color:transparent}
+.hsub{font-size:1rem;color:rgba(255,255,255,.6);max-width:540px;margin:0 auto 34px}
+.hbtns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-w{background:#fff;color:#000;padding:14px 38px;border-radius:50px;font-size:.88rem;font-weight:800;letter-spacing:1px;border:none;cursor:pointer;transition:all .25s;text-decoration:none;display:inline-block}
+.btn-w:hover{background:var(--pink);color:#fff;transform:scale(1.04)}
+.btn-o{background:transparent;color:#fff;padding:14px 38px;border-radius:50px;font-size:.88rem;font-weight:700;letter-spacing:1px;border:1.5px solid rgba(255,255,255,.3);cursor:pointer;transition:all .25s;text-decoration:none;display:inline-block}
+.btn-o:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+
+/* TRUST */
+.trust{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.trust-i{max-width:1380px;margin:0 auto;display:flex;justify-content:center;align-items:center;gap:44px;padding:16px 24px;flex-wrap:wrap}
+.ti{display:flex;align-items:center;gap:10px;font-size:.8rem;font-weight:600;color:#bbb}
+.ti strong{color:#fff}
+
+/* WRAP */
+.wrap{max-width:1380px;margin:0 auto;padding:70px 24px}
+.stitle{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700;letter-spacing:-.5px;margin-bottom:36px}
+.stitle span{color:var(--pink)}
+
+/* QUICK CATS */
+.qcats{display:flex;gap:14px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}
+.qcats::-webkit-scrollbar{display:none}
+.qcat{flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:9px;cursor:pointer;text-decoration:none}
+.qcimg{width:104px;height:104px;border-radius:50%;overflow:hidden;border:2.5px solid var(--border);transition:border-color .2s;background-size:cover;background-position:center}
+.qcat:hover .qcimg{border-color:var(--pink)}
+.qcname{font-size:.74rem;font-weight:600;color:#bbb;text-align:center}
+
+/* GENDER */
+.ggrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.gcard{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:3/4;display:flex;align-items:flex-end;cursor:pointer;text-decoration:none}
+.gcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gcard:hover img{transform:scale(1.05)}
+.gcov{position:relative;z-index:2;width:100%;background:linear-gradient(transparent,rgba(0,0,0,.78) 60%);padding:28px 22px 22px}
+.glabel{font-family:'Space Grotesk',sans-serif;font-size:1.35rem;font-weight:700;color:#fff}
+.glink{display:inline-block;margin-top:7px;font-size:.76rem;font-weight:700;color:var(--pink);letter-spacing:1px}
+
+/* TABS */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px}
+.tab{background:var(--surface);border:1.5px solid var(--border);color:#999;padding:8px 18px;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap}
+.tab.active,.tab:hover{background:var(--pink);border-color:var(--pink);color:#fff}
+
+/* PRODUCTS */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.pcard{background:var(--surface);border-radius:var(--r);overflow:hidden;cursor:pointer;position:relative;transition:transform .3s,box-shadow .3s;border:1px solid var(--border)}
+.pcard:hover{transform:translateY(-8px);box-shadow:0 24px 48px rgba(0,0,0,.55)}
+.pimgw{position:relative;aspect-ratio:3/4;overflow:hidden;background:#1c1c1c}
+.pimgw img{width:100%;height:100%;object-fit:cover;transition:transform .5s;display:block}
+.pcard:hover .pimgw img{transform:scale(1.07)}
+.badge{position:absolute;top:11px;left:11px;color:#fff;font-size:.65rem;font-weight:800;letter-spacing:1px;padding:3px 10px;border-radius:50px}
+.badge.top{background:var(--pink)}
+.badge.new{background:var(--green)}
+.badge.sale{background:#f59e0b}
+.qadd{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.82);backdrop-filter:blur(4px);color:#fff;font-size:.76rem;font-weight:800;letter-spacing:1px;padding:12px;text-align:center;transform:translateY(100%);transition:transform .25s}
+.pcard:hover .qadd{transform:translateY(0)}
+.pinfo{padding:14px}
+.pname{font-weight:600;font-size:.88rem;margin-bottom:5px;color:#ddd}
+.pcat{font-size:.7rem;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.pprice{color:var(--pink);font-size:1.05rem;font-weight:700}
+.pprice-old{color:var(--muted);font-size:.82rem;text-decoration:line-through;margin-left:6px}
+
+/* COLECCIONES */
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.ccard{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;cursor:pointer;text-decoration:none;display:block}
+.ccard img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.ccard:hover img{transform:scale(1.05)}
+.ccbody{position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,.82));display:flex;flex-direction:column;justify-content:flex-end;padding:22px}
+.cctitle{font-family:'Space Grotesk',sans-serif;font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:3px}
+.cccta{font-size:.74rem;color:var(--pink);font-weight:700;letter-spacing:1px}
+
+/* NEWSLETTER */
+.nl-sect{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.nl-inner{max-width:520px;margin:0 auto;text-align:center;padding:66px 24px}
+.nl-inner h2{font-family:'Space Grotesk',sans-serif;font-size:1.9rem;font-weight:700;margin-bottom:8px}
+.nl-inner p{color:var(--muted);margin-bottom:26px;font-size:.88rem}
+.nl-form{display:flex;gap:8px}
+.nl-form input{flex:1;background:var(--bg);border:1.5px solid var(--border);color:#fff;border-radius:50px;padding:12px 18px;font-size:.88rem;outline:none;transition:border-color .2s}
+.nl-form input:focus{border-color:var(--pink)}
+.nl-form button{background:var(--pink);color:#fff;border:none;cursor:pointer;border-radius:50px;padding:12px 22px;font-weight:800;font-size:.82rem;letter-spacing:.5px;transition:background .2s;white-space:nowrap}
+.nl-form button:hover{background:#d40049}
+
+/* FOOTER */
+.fi{max-width:1380px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;padding:56px 24px 36px}
+.fbrand .logo{font-size:1.3rem;display:block;margin-bottom:10px}
+.fbrand p{font-size:.82rem;color:var(--muted);max-width:220px;line-height:1.7}
+.fcol h4{font-size:.68rem;font-weight:800;letter-spacing:2px;color:#fff;margin-bottom:14px;text-transform:uppercase}
+.fcol a{display:block;color:var(--muted);text-decoration:none;font-size:.82rem;margin-bottom:9px;transition:color .2s}
+.fcol a:hover{color:#fff}
+.fbot{border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;padding:18px 24px;max-width:1380px;margin:0 auto;font-size:.76rem;color:var(--muted)}
+.pays{display:flex;gap:6px}
+.pay{background:var(--surface);border:1px solid var(--border);border-radius:5px;padding:3px 8px;font-size:.68rem;font-weight:700;color:#bbb}
+
+/* MODAL */
+.modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:1800;opacity:0;pointer-events:none;transition:opacity .3s;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal-ov.open{opacity:1;pointer-events:all}
+.modal{background:#161616;border-radius:20px;border:1px solid var(--border);width:100%;max-width:900px;max-height:90vh;overflow-y:auto;transform:scale(.95);transition:transform .3s;display:grid;grid-template-columns:1fr 1fr}
+.modal-ov.open .modal{transform:scale(1)}
+.modal-img{aspect-ratio:3/4;overflow:hidden;border-radius:20px 0 0 20px}
+.modal-img img{width:100%;height:100%;object-fit:cover}
+.modal-body{padding:36px 32px;display:flex;flex-direction:column;gap:14px;overflow-y:auto}
+.modal-close{align-self:flex-end;background:none;border:none;color:#999;font-size:1.4rem;cursor:pointer;line-height:1}
+.modal-close:hover{color:#fff}
+.modal-cat{font-size:.7rem;font-weight:700;letter-spacing:2px;color:var(--pink);text-transform:uppercase}
+.modal-name{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:700;line-height:1.2}
+.modal-price{font-size:1.5rem;font-weight:800;color:var(--pink)}
+.modal-desc{font-size:.86rem;color:#aaa;line-height:1.7}
+.modal-sizes{display:flex;gap:8px;flex-wrap:wrap}
+.sz{border:1.5px solid var(--border);background:none;color:#ccc;padding:8px 14px;border-radius:8px;font-size:.8rem;font-weight:600;cursor:pointer;transition:all .2s}
+.sz:hover,.sz.active{border-color:var(--pink);color:#fff;background:rgba(255,0,92,.1)}
+.modal-add{background:var(--pink);color:#fff;border:none;cursor:pointer;padding:15px;border-radius:50px;font-size:.9rem;font-weight:800;letter-spacing:1px;transition:background .2s;width:100%}
+.modal-add:hover{background:#d40049}
+.modal-features{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--border);padding-top:14px}
+.mf{font-size:.8rem;color:#aaa;display:flex;gap:8px;align-items:center}
+
+/* CART DRAWER */
+.cart-ov{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1999;opacity:0;pointer-events:none;transition:opacity .3s}
+.cart-ov.open{opacity:1;pointer-events:all}
+.cart-drw{position:fixed;top:0;right:0;bottom:0;width:440px;max-width:100%;background:#141414;border-left:1px solid var(--border);z-index:2000;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+.cart-drw.open{transform:translateX(0)}
+.cart-hdr{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--border)}
+.cart-hdr h3{font-size:.95rem;font-weight:700}
+.cart-cls{background:none;border:none;color:#999;cursor:pointer;font-size:1.2rem}
+.cart-empty-state{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);gap:12px;font-size:.9rem}
+.cart-items{flex:1;overflow-y:auto;padding:16px}
+.cart-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--border)}
+.ci-img{width:70px;height:70px;border-radius:8px;object-fit:cover;flex-shrink:0}
+.ci-info{flex:1}
+.ci-name{font-size:.84rem;font-weight:600;margin-bottom:3px}
+.ci-sz{font-size:.74rem;color:var(--muted);margin-bottom:6px}
+.ci-bottom{display:flex;justify-content:space-between;align-items:center}
+.ci-price{font-size:.9rem;font-weight:700;color:var(--pink)}
+.ci-rm{background:none;border:none;color:var(--muted);cursor:pointer;font-size:.78rem;transition:color .2s}
+.ci-rm:hover{color:#ff4444}
+.ci-qty{display:flex;align-items:center;gap:6px;font-size:.82rem}
+.ci-qty button{background:var(--s2);border:1px solid var(--border);color:#ccc;width:22px;height:22px;border-radius:4px;cursor:pointer;font-size:.85rem;line-height:1;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.ci-qty button:hover{background:rgba(255,0,92,.15);border-color:var(--pink);color:#fff}
+
+/* DISCOUNT CODE */
+.discount-row{padding:10px 22px;border-top:1px solid var(--border);display:flex;gap:8px}
+.discount-row input{flex:1;background:var(--bg);border:1.5px solid var(--border);color:#fff;border-radius:8px;padding:9px 14px;font-size:.8rem;outline:none;transition:border-color .2s}
+.discount-row input:focus{border-color:var(--pink)}
+.discount-row input::placeholder{color:var(--muted)}
+.discount-row button{background:var(--s2);border:1px solid var(--border);color:#ccc;border-radius:8px;padding:9px 14px;font-size:.78rem;font-weight:700;cursor:pointer;transition:all .2s;white-space:nowrap}
+.discount-row button:hover{border-color:var(--pink);color:var(--pink)}
+.discount-ok{font-size:.76rem;color:var(--green);padding:0 22px 8px;font-weight:600}
+.cart-foot{padding:18px 22px;border-top:1px solid var(--border)}
+.cart-summary-row{display:flex;justify-content:space-between;font-size:.82rem;color:#aaa;margin-bottom:6px}
+.cart-summary-row.discount{color:var(--green)}
+.cart-total{display:flex;justify-content:space-between;margin-bottom:14px;font-weight:700;margin-top:8px;padding-top:8px;border-top:1px solid var(--border)}
+.cart-chk{display:block;width:100%;background:var(--pink);color:#fff;border:none;cursor:pointer;padding:15px;border-radius:50px;font-size:.88rem;font-weight:800;letter-spacing:1px;transition:background .2s;text-align:center}
+.cart-chk:hover{background:#d40049}
+.cart-chk:disabled{background:#555;cursor:not-allowed}
+
+/* FADE */
+.fi-anim{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.fi-anim.vis{opacity:1;transform:translateY(0)}
+
+/* ── OVERLAY SYSTEM ── */
+.ov-layer{position:fixed;inset:0;z-index:3000;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .3s}
+.ov-layer.open{opacity:1;pointer-events:all}
+.ov-layer::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.82)}
+.ov-box{position:relative;background:#161616;border:1px solid var(--border);border-radius:20px;width:100%;max-width:520px;max-height:90vh;overflow-y:auto;padding:36px;transform:scale(.95);transition:transform .3s}
+.ov-layer.open .ov-box{transform:scale(1)}
+.ov-close{position:absolute;top:18px;right:18px;background:none;border:none;color:#777;font-size:1.3rem;cursor:pointer;line-height:1;transition:color .2s}
+.ov-close:hover{color:#fff}
+.ov-title{font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:700;margin-bottom:6px}
+.ov-sub{font-size:.84rem;color:var(--muted);margin-bottom:26px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:.76rem;font-weight:700;color:#aaa;margin-bottom:6px;letter-spacing:.5px;text-transform:uppercase}
+.form-group input,.form-group select{width:100%;background:var(--bg);border:1.5px solid var(--border);color:#fff;border-radius:10px;padding:12px 14px;font-size:.88rem;outline:none;transition:border-color .2s;font-family:inherit}
+.form-group input:focus,.form-group select:focus{border-color:var(--pink)}
+.form-group input::placeholder{color:var(--muted)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ov-btn{width:100%;background:var(--pink);color:#fff;border:none;cursor:pointer;padding:14px;border-radius:50px;font-size:.9rem;font-weight:800;letter-spacing:.5px;transition:background .2s;margin-top:6px}
+.ov-btn:hover{background:#d40049}
+.ov-link{display:block;text-align:center;margin-top:14px;font-size:.82rem;color:var(--muted)}
+.ov-link a{color:var(--pink);text-decoration:none;font-weight:600}
+.ov-link a:hover{text-decoration:underline}
+.ov-divider{display:flex;align-items:center;gap:10px;margin:20px 0;color:var(--muted);font-size:.76rem}
+.ov-divider::before,.ov-divider::after{content:'';flex:1;height:1px;background:var(--border)}
+.ov-tabs{display:flex;background:var(--bg);border-radius:50px;padding:4px;margin-bottom:26px;border:1px solid var(--border)}
+.ov-tab{flex:1;text-align:center;padding:9px;border-radius:50px;font-size:.8rem;font-weight:700;cursor:pointer;transition:all .2s;color:var(--muted)}
+.ov-tab.active{background:var(--pink);color:#fff}
+.error-msg{color:#ff4444;font-size:.78rem;margin-top:-10px;margin-bottom:10px;display:none}
+.error-msg.show{display:block}
+.success-msg{background:rgba(0,179,126,.1);border:1px solid rgba(0,179,126,.3);color:var(--green);border-radius:10px;padding:12px 16px;font-size:.84rem;margin-bottom:16px;display:none}
+.success-msg.show{display:block}
+
+/* WEBPAY CHECKOUT */
+.checkout-steps{display:flex;gap:0;margin-bottom:28px;border-radius:50px;overflow:hidden;border:1px solid var(--border)}
+.cs{flex:1;text-align:center;padding:10px 4px;font-size:.72rem;font-weight:700;color:var(--muted);background:var(--bg);border-right:1px solid var(--border);transition:all .3s;letter-spacing:.3px}
+.cs:last-child{border-right:none}
+.cs.done{background:rgba(0,179,126,.1);color:var(--green)}
+.cs.active{background:rgba(255,0,92,.1);color:var(--pink)}
+.order-items-mini{border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:18px}
+.oi-row{display:flex;justify-content:space-between;align-items:center;padding:11px 16px;font-size:.82rem;border-bottom:1px solid var(--border)}
+.oi-row:last-child{border-bottom:none}
+.oi-row span:last-child{font-weight:700;color:var(--pink)}
+.oi-total{background:var(--s2);font-weight:700!important}
+.oi-total span:last-child{color:#fff!important;font-size:.92rem}
+.webpay-card{background:linear-gradient(135deg,#003087,#0070ba);border-radius:16px;padding:28px;margin:18px 0;text-align:center;border:1px solid rgba(255,255,255,.1)}
+.webpay-logo{font-size:1.3rem;font-weight:900;letter-spacing:-1px;color:#fff;margin-bottom:4px}
+.webpay-logo span{color:#00bcff}
+.webpay-sub{font-size:.76rem;color:rgba(255,255,255,.6);margin-bottom:22px}
+.card-input-wrap{background:rgba(0,0,0,.25);border-radius:12px;padding:20px;text-align:left}
+.card-input-wrap label{font-size:.68rem;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:5px}
+.card-input-wrap input{background:none;border:none;border-bottom:1px solid rgba(255,255,255,.2);color:#fff;font-size:.95rem;outline:none;width:100%;padding:4px 0;margin-bottom:16px;font-family:monospace;letter-spacing:2px}
+.card-input-wrap input::placeholder{color:rgba(255,255,255,.3);letter-spacing:0}
+.card-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.webpay-security{font-size:.7rem;color:rgba(255,255,255,.4);margin-top:12px;text-align:center}
+.confirm-btn{width:100%;background:linear-gradient(90deg,#0070ba,#00bcff);color:#fff;border:none;cursor:pointer;padding:14px;border-radius:50px;font-size:.9rem;font-weight:800;letter-spacing:.5px;transition:opacity .2s;margin-top:16px}
+.confirm-btn:hover{opacity:.88}
+.order-success{text-align:center;padding:10px 0}
+.success-icon{font-size:3.5rem;margin-bottom:14px;display:block}
+.order-num{background:var(--s2);border-radius:10px;padding:12px 20px;margin:14px 0;font-size:.82rem;color:#aaa}
+.order-num strong{color:#fff;font-size:.92rem}
+
+/* ── ADMIN PANEL ── */
+.admin-overlay{position:fixed;inset:0;z-index:5000;background:#0d0d0d;overflow-y:auto;display:none}
+.admin-overlay.open{display:block}
+.admin-header{background:#111;border-bottom:1px solid var(--border);padding:0 28px;height:60px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}
+.admin-logo{font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;display:flex;align-items:center;gap:10px}
+.admin-logo em{background:linear-gradient(90deg,var(--pink),var(--cyan));-webkit-background-clip:text;color:transparent;font-style:normal}
+.admin-badge{background:var(--pink);color:#fff;font-size:.6rem;font-weight:800;padding:2px 8px;border-radius:50px;letter-spacing:1px}
+.admin-nav{display:flex;gap:4px}
+.anav{background:none;border:none;color:#777;font-size:.8rem;font-weight:600;padding:8px 14px;border-radius:8px;cursor:pointer;transition:all .2s}
+.anav:hover{color:#fff;background:rgba(255,255,255,.06)}
+.anav.active{color:#fff;background:rgba(255,255,255,.08)}
+.admin-body{max-width:1300px;margin:0 auto;padding:32px 28px}
+.admin-title{font-family:'Space Grotesk',sans-serif;font-size:1.5rem;font-weight:700;margin-bottom:24px}
+.admin-title span{color:var(--pink)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:20px}
+.stat-label{font-size:.72rem;font-weight:700;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.stat-val{font-family:'Space Grotesk',sans-serif;font-size:1.8rem;font-weight:700;color:#fff}
+.stat-val.pink{color:var(--pink)}
+.stat-val.green{color:var(--green)}
+.stat-val.cyan{color:var(--cyan)}
+.admin-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);margin-bottom:24px}
+.admin-section-hdr{padding:18px 22px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.admin-section-hdr h3{font-size:.9rem;font-weight:700}
+.admin-table{width:100%;border-collapse:collapse}
+.admin-table th{font-size:.68rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:12px 16px;text-align:left;border-bottom:1px solid var(--border)}
+.admin-table td{padding:12px 16px;font-size:.82rem;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:middle}
+.admin-table tr:last-child td{border-bottom:none}
+.admin-table tr:hover td{background:rgba(255,255,255,.02)}
+.admin-img-thumb{width:44px;height:44px;border-radius:6px;object-fit:cover;border:1px solid var(--border)}
+.edit-input{background:var(--bg);border:1px solid var(--border);color:#fff;border-radius:6px;padding:5px 9px;font-size:.8rem;width:90px;outline:none;font-family:inherit;transition:border-color .2s}
+.edit-input:focus{border-color:var(--pink)}
+.edit-input.wide{width:160px}
+.badge-tag{display:inline-block;padding:2px 9px;border-radius:50px;font-size:.65rem;font-weight:800;letter-spacing:.5px}
+.badge-tag.top{background:rgba(255,0,92,.15);color:var(--pink);border:1px solid rgba(255,0,92,.3)}
+.badge-tag.new{background:rgba(0,179,126,.15);color:var(--green);border:1px solid rgba(0,179,126,.3)}
+.badge-tag.sale{background:rgba(245,158,11,.15);color:#f59e0b;border:1px solid rgba(245,158,11,.3)}
+.badge-tag.none{background:rgba(255,255,255,.05);color:#666;border:1px solid var(--border)}
+.status-select{background:var(--bg);border:1px solid var(--border);color:#ccc;border-radius:6px;padding:5px 9px;font-size:.78rem;outline:none;cursor:pointer;font-family:inherit}
+.status-select.pendiente{border-color:#f59e0b;color:#f59e0b}
+.status-select.procesando{border-color:var(--cyan);color:var(--cyan)}
+.status-select.enviado{border-color:var(--green);color:var(--green)}
+.status-select.entregado{border-color:#888;color:#888}
+.status-select.cancelado{border-color:#ff4444;color:#ff4444}
+.table-wrap{overflow-x:auto;padding:0 4px}
+.ab{background:var(--pink);color:#fff;border:none;cursor:pointer;padding:8px 16px;border-radius:8px;font-size:.78rem;font-weight:700;letter-spacing:.5px;transition:background .2s}
+.ab:hover{background:#d40049}
+.ab.secondary{background:var(--s2);border:1px solid var(--border);color:#ccc}
+.ab.secondary:hover{background:rgba(255,255,255,.08);color:#fff}
+.ab.danger{background:rgba(255,68,68,.1);border:1px solid rgba(255,68,68,.3);color:#ff6666}
+.ab.danger:hover{background:rgba(255,68,68,.2)}
+.ab.green{background:rgba(0,179,126,.1);border:1px solid rgba(0,179,126,.3);color:var(--green)}
+.ab.green:hover{background:rgba(0,179,126,.2)}
+.admin-panel-tab{display:none}
+.admin-panel-tab.active{display:block}
+.add-product-form{padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.add-product-form .full{grid-column:1/-1}
+.add-product-form label{display:block;font-size:.72rem;font-weight:700;color:#aaa;margin-bottom:5px;letter-spacing:.5px;text-transform:uppercase}
+.add-product-form input,.add-product-form select,.add-product-form textarea{width:100%;background:var(--bg);border:1.5px solid var(--border);color:#fff;border-radius:8px;padding:10px 12px;font-size:.84rem;outline:none;font-family:inherit;transition:border-color .2s}
+.add-product-form input:focus,.add-product-form select:focus,.add-product-form textarea:focus{border-color:var(--pink)}
+.add-product-form textarea{resize:vertical;min-height:72px}
+.users-table .role-tag{background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.2);color:var(--cyan);font-size:.65rem;font-weight:800;padding:2px 9px;border-radius:50px;letter-spacing:.5px}
+.users-table .role-tag.admin{background:rgba(255,0,92,.08);border-color:rgba(255,0,92,.3);color:var(--pink)}
+.toast{position:fixed;bottom:28px;right:28px;background:#1e1e1e;border:1px solid var(--border);border-radius:12px;padding:14px 20px;font-size:.84rem;font-weight:600;z-index:9999;transform:translateY(20px);opacity:0;transition:all .3s;pointer-events:none;max-width:320px}
+.toast.show{transform:translateY(0);opacity:1}
+.toast.success{border-color:rgba(0,179,126,.4);color:var(--green)}
+.toast.error{border-color:rgba(255,68,68,.4);color:#ff6666}
+.toast.info{border-color:rgba(0,229,255,.3);color:var(--cyan)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hdr{grid-template-columns:auto 1fr auto}
+  .nav-l{display:none}
+  .nav-r .nl{display:none}
+  .ggrid{grid-template-columns:1fr}
+  .fi{grid-template-columns:1fr 1fr}
+  .modal{grid-template-columns:1fr}
+  .modal-img{border-radius:20px 20px 0 0;aspect-ratio:16/9}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .add-product-form{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .hero h1{letter-spacing:-1px}
+  .nl-form{flex-direction:column}
+  .fi{grid-template-columns:1fr}
+  .fbot{flex-direction:column;gap:10px;text-align:center}
+  .pgrid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .ov-box{padding:24px 20px}
+  .form-row{grid-template-columns:1fr}
+  .checkout-steps{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT -->
+<div class="ann"><span>🚚 ENVÍO GRATIS EN TODOS LOS PEDIDOS &nbsp;&nbsp; 🔥 NUEVA COLECCIÓN 2026 YA DISPONIBLE &nbsp;&nbsp; 🔄 DEVOLUCIONES GRATIS 14 DÍAS &nbsp;&nbsp; ⚡ ENTREGA EXPRESS 24-48H &nbsp;&nbsp; 🚚 ENVÍO GRATIS EN TODOS LOS PEDIDOS</span></div>
+
+<!-- HEADER -->
+<header>
+  <div class="hdr">
+    <nav class="nav-l">
+      <a class="nl hot" href="#productos">Colección 2026</a>
+      <div class="dd">
+        <button class="nl">SUPERIOR ▾</button>
+        <div class="ddmenu">
+          <div class="ddgrp"><div class="ddlabel">SUPERIOR</div>
+            <a href="#" onclick="return filterCat('poleron')">Polerones</a>
+            <a href="#" onclick="return filterCat('polera')">Poleras Oversize</a>
+            <a href="#" onclick="return filterCat('chaqueta')">Chaquetas</a>
+          </div>
+        </div>
+      </div>
+      <div class="dd">
+        <button class="nl">INFERIOR ▾</button>
+        <div class="ddmenu">
+          <div class="ddgrp"><div class="ddlabel">INFERIOR</div>
+            <a href="#" onclick="return filterCat('jeans-hombre')">Jeans Hombre</a>
+            <a href="#" onclick="return filterCat('jeans-mujer')">Jeans Mujer</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <a href="#" class="logo"><em>MODA</em> URBANO</a>
+    <div class="nav-r">
+      <div class="dd">
+        <button class="nl">ACCESORIOS ▾</button>
+        <div class="ddmenu">
+          <div class="ddgrp"><div class="ddlabel">ACCESORIOS</div>
+            <a href="#" onclick="return filterCat('gorro')">Gorros</a>
+            <a href="#" onclick="return filterCat('jockey')">Jockeys</a>
+            <a href="#" onclick="return filterCat('accesorio')">Accesorios</a>
+          </div>
+        </div>
+      </div>
+      <button class="auth-btn" id="authBtn" onclick="openAuth()">Iniciar Sesión</button>
+      <button class="cartbtn" onclick="toggleCart()">🛒 <span class="cc" id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hbg"></div>
+  <div class="hcont">
+    <div class="eyebrow">COLECCIÓN 2026 — YA DISPONIBLE</div>
+    <h1>TU ESTILO<br><span>MODA</span><br>URBANO</h1>
+    <p class="hsub">Jeans Baggy · Polerones Oversize · Gorros Cyber · Chaquetas · Poleras Boxy Fit</p>
+    <div class="hbtns">
+      <a href="#productos" class="btn-w">COMPRAR AHORA →</a>
+      <a href="#colecciones" class="btn-o">VER COLECCIONES</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="trust-i">
+    <div class="ti"><span>🚚</span><span><strong>Envío gratis</strong> en todos los pedidos</span></div>
+    <div class="ti"><span>🔄</span><span><strong>Devoluciones</strong> en 14 días</span></div>
+    <div class="ti"><span>❤️</span><span><strong>+300.000</strong> clientes</span></div>
+    <div class="ti"><span>💬</span><span><strong>Soporte</strong> 24/7</span></div>
+  </div>
+</div>
+
+<!-- QUICK CATEGORIES -->
+<div class="wrap fi-anim">
+  <div class="qcats">
+    <a class="qcat" href="#" onclick="return filterCat('jeans-hombre')">
+      <div class="qcimg" style="background-image:url('https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=300&q=80')"></div>
+      <span class="qcname">Jeans Hombre</span>
+    </a>
+    <a class="qcat" href="#" onclick="return filterCat('jeans-mujer')">
+      <div class="qcimg" style="background-image:url('https://images.unsplash.com/photo-1475180098004-ca77a66827be?w=300&q=80')"></div>
+      <span class="qcname">Jeans Mujer</span>
+    </a>
+    <a class="qcat" href="#" onclick="return filterCat('poleron')">
+      <div class="qcimg" style="background-image:url('https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=300&q=80')"></div>
+      <span class="qcname">Polerones</span>
+    </a>
+    <a class="qcat" href="#" onclick="return filterCat('polera')">
+      <div class="qcimg" style="background-image:url('https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=300&q=80')"></div>
+      <span class="qcname">Poleras Oversize</span>
+    </a>
+    <a class="qcat" href="#" onclick="return filterCat('chaqueta')">
+      <div class="qcimg" style="background-image:url('https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=300&q=80')"></div>
+      <span class="qcname">Chaquetas</span>
+    </a>
+    <a class="qcat" href="#" onclick="return filterCat('gorro')">
+      <div class="qcimg" style="background-image:url('https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=300&q=80')"></div>
+      <span class="qcname">Gorros</span>
+    </a>
+    <a class="qcat" href="#" onclick="return filterCat('jockey')">
+      <div class="qcimg" style="background-image:url('https://images.unsplash.com/photo-1534215754734-18e55d13e346?w=300&q=80')"></div>
+      <span class="qcname">Jockeys</span>
+    </a>
+    <a class="qcat" href="#" onclick="return filterCat('accesorio')">
+      <div class="qcimg" style="background-image:url('https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=300&q=80')"></div>
+      <span class="qcname">Accesorios</span>
+    </a>
+  </div>
+</div>
+
+<!-- GENDER BANNERS -->
+<div class="wrap fi-anim" id="colecciones" style="padding-top:0">
+  <h2 class="stitle">Colecciones <span>2026</span></h2>
+  <div class="ggrid">
+    <a href="#" class="gcard" onclick="return filterCat('jeans-hombre')">
+      <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=800&q=80" alt="Y2K Hombre">
+      <div class="gcov"><div class="glabel">MODA URBANO HOMBRE</div><div class="glink">VER COLECCIÓN →</div></div>
+    </a>
+    <a href="#" class="gcard" onclick="return filterCat('jeans-mujer')">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80" alt="Y2K Mujer">
+      <div class="gcov"><div class="glabel">MODA URBANO MUJER</div><div class="glink">VER COLECCIÓN →</div></div>
+    </a>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="wrap fi-anim" id="productos">
+  <h2 class="stitle">🔥 Todos los productos <span>Moda Urbano</span></h2>
+  <div class="tabs" id="tabs">
+    <button class="tab active" onclick="filterCat('all',this)">Todos</button>
+    <button class="tab" onclick="filterCat('jeans-hombre',this)">Jeans Hombre</button>
+    <button class="tab" onclick="filterCat('jeans-mujer',this)">Jeans Mujer</button>
+    <button class="tab" onclick="filterCat('poleron',this)">Polerones</button>
+    <button class="tab" onclick="filterCat('polera',this)">Poleras Oversize</button>
+    <button class="tab" onclick="filterCat('chaqueta',this)">Chaquetas</button>
+    <button class="tab" onclick="filterCat('gorro',this)">Gorros</button>
+    <button class="tab" onclick="filterCat('jockey',this)">Jockeys</button>
+    <button class="tab" onclick="filterCat('accesorio',this)">Accesorios</button>
+  </div>
+  <div class="pgrid" id="pgrid"></div>
+</div>
+
+<!-- COLLECTIONS GRID -->
+<div class="wrap fi-anim" style="padding-top:0">
+  <h2 class="stitle">Explora por <span>categoría</span></h2>
+  <div class="cgrid">
+    <a href="#" class="ccard" onclick="return filterCat('jeans-hombre')">
+      <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600&q=80" alt="Jeans Hombre">
+      <div class="ccbody"><div class="cctitle">Jeans Hombre</div><div class="cccta">EXPLORAR →</div></div>
+    </a>
+    <a href="#" class="ccard" onclick="return filterCat('jeans-mujer')">
+      <img src="https://images.unsplash.com/photo-1475180098004-ca77a66827be?w=600&q=80" alt="Jeans Mujer">
+      <div class="ccbody"><div class="cctitle">Jeans Mujer</div><div class="cccta">EXPLORAR →</div></div>
+    </a>
+    <a href="#" class="ccard" onclick="return filterCat('poleron')">
+      <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&q=80" alt="Polerones">
+      <div class="ccbody"><div class="cctitle">Polerones</div><div class="cccta">EXPLORAR →</div></div>
+    </a>
+    <a href="#" class="ccard" onclick="return filterCat('chaqueta')">
+      <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&q=80" alt="Chaquetas">
+      <div class="ccbody"><div class="cctitle">Chaquetas Urbanas</div><div class="cccta">EXPLORAR →</div></div>
+    </a>
+    <a href="#" class="ccard" onclick="return filterCat('polera')">
+      <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&q=80" alt="Poleras">
+      <div class="ccbody"><div class="cctitle">Poleras Oversize</div><div class="cccta">EXPLORAR →</div></div>
+    </a>
+    <a href="#" class="ccard" onclick="return filterCat('gorro')">
+      <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600&q=80" alt="Gorros">
+      <div class="ccbody"><div class="cctitle">Gorros & Jockeys</div><div class="cccta">EXPLORAR →</div></div>
+    </a>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="nl-sect fi-anim">
+  <div class="nl-inner">
+    <h2>Únete al <span style="color:var(--pink)">drop</span></h2>
+    <p>Suscríbete y sé el primero en enterarte de nuevas colecciones, drops exclusivos y ofertas.</p>
+    <div class="nl-form">
+      <input type="email" placeholder="tu@email.com">
+      <button onclick="showToast('¡Suscrito al newsletter! 🔥','success')">SUSCRIBIRSE</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fi">
+    <div class="fbrand">
+      <a href="#" class="logo"><em>MODA</em> URBANO</a>
+      <p>Referencia en moda urbano juvenil, ropa casual y accesorios. Envío mundial desde Santiago.</p>
+    </div>
+    <div class="fcol"><h4>Tienda</h4><a href="#">Novedades</a><a href="#">Más vendidos</a><a href="#">Colección 2026</a><a href="#">Rebajas</a></div>
+    <div class="fcol"><h4>Ayuda</h4><a href="#">Contacto</a><a href="#">Envíos</a><a href="#">Devoluciones</a><a href="#">Seguimiento</a><a href="#">FAQ</a></div>
+    <div class="fcol"><h4>Empresa</h4><a href="#">Sobre nosotros</a><a href="#">Blog</a><a href="#">Privacidad</a><a href="#">Términos</a><a href="#" onclick="openAdmin();return false;" style="color:var(--pink);margin-top:8px">🔒 Admin</a></div>
+  </div>
+  <div class="fbot">
+    <span>© 2026 Moda Urbano. Todos los derechos reservados.</span>
+    <div class="pays"><span class="pay">VISA</span><span class="pay">MC</span><span class="pay">WEBPAY</span><span class="pay">APPLE PAY</span></div>
+  </div>
+</footer>
+
+<!-- MODAL PRODUCTO -->
+<div class="modal-ov" id="modalOv" onclick="closeModalEv(event)">
+  <div class="modal" id="modal">
+    <div class="modal-img"><img id="mImg" src="" alt=""></div>
+    <div class="modal-body">
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+      <div class="modal-cat" id="mCat"></div>
+      <div class="modal-name" id="mName"></div>
+      <div class="modal-price" id="mPrice"></div>
+      <div class="modal-desc" id="mDesc"></div>
+      <div>
+        <div style="font-size:.76rem;font-weight:700;color:#aaa;margin-bottom:10px;letter-spacing:1px">TALLA</div>
+        <div class="modal-sizes" id="mSizes"></div>
+      </div>
+      <button class="modal-add" onclick="addToCart()">+ AGREGAR AL CARRITO</button>
+      <div class="modal-features">
+        <div class="mf">🚚 Envío gratis en este pedido</div>
+        <div class="mf">🔄 Devolución gratuita en 14 días</div>
+        <div class="mf">📦 Entrega estimada: 3-5 días hábiles</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CART DRAWER -->
+<div class="cart-ov" id="cartOv" onclick="toggleCart()"></div>
+<div class="cart-drw" id="cartDrw">
+  <div class="cart-hdr">
+    <h3>Mi Carrito (<span id="cartItemLabel">0</span>)</h3>
+    <button class="cart-cls" onclick="toggleCart()">✕</button>
+  </div>
+  <div id="cartBody" class="cart-empty-state">
+    <span style="font-size:2.5rem">🛒</span>
+    <span>Tu carrito está vacío</span>
+    <button class="btn-w" style="font-size:.78rem;padding:10px 22px" onclick="toggleCart()">Seguir comprando</button>
+  </div>
+  <div class="discount-row">
+    <input type="text" id="discountInput" placeholder="Código de descuento" oninput="this.value=this.value.toUpperCase()">
+    <button onclick="applyDiscount()">APLICAR</button>
+  </div>
+  <div id="discountMsg"></div>
+  <div class="cart-foot">
+    <div class="cart-summary-row"><span>Subtotal</span><span id="cartSubtotal">$0</span></div>
+    <div class="cart-summary-row discount" id="discountRow" style="display:none"><span id="discountLabel">Descuento</span><span id="discountAmt"></span></div>
+    <div class="cart-summary-row"><span>Envío</span><span style="color:var(--green)">¡Gratis!</span></div>
+    <div class="cart-total"><span>Total</span><span id="cartTotal" style="color:var(--pink)">$0</span></div>
+    <button class="cart-chk" id="cartChkBtn" onclick="openCheckout()">FINALIZAR COMPRA →</button>
+  </div>
+</div>
+
+<!-- AUTH MODAL -->
+<div class="ov-layer" id="authModal" onclick="closeOvEv(event,'authModal')">
+  <div class="ov-box">
+    <button class="ov-close" onclick="closeOv('authModal')">✕</button>
+    <div class="ov-tabs">
+      <div class="ov-tab active" id="tabLogin" onclick="switchAuthTab('login')">Iniciar Sesión</div>
+      <div class="ov-tab" id="tabReg" onclick="switchAuthTab('register')">Crear Cuenta</div>
+    </div>
+
+    <!-- LOGIN -->
+    <div id="loginPanel">
+      <div class="ov-title">Bienvenido de vuelta 👋</div>
+      <div class="ov-sub">Inicia sesión para ver tus pedidos y comprar más rápido.</div>
+      <div id="loginError" class="error-msg">Correo o contraseña incorrectos.</div>
+      <div class="form-group">
+        <label>Correo electrónico</label>
+        <input type="email" id="loginEmail" placeholder="tu@email.com">
+      </div>
+      <div class="form-group">
+        <label>Contraseña</label>
+        <input type="password" id="loginPass" placeholder="••••••••">
+      </div>
+      <button class="ov-btn" onclick="doLogin()">INGRESAR →</button>
+      <div class="ov-divider">o</div>
+      <div style="font-size:.76rem;color:var(--muted);text-align:center;line-height:1.7">
+        <strong style="color:#aaa">Cuentas de demo:</strong><br>
+        admin@modaurbano.cl / admin123 (Admin)<br>
+        cliente@y2k.cl / cliente123 (Cliente)
+      </div>
+    </div>
+
+    <!-- REGISTER -->
+    <div id="registerPanel" style="display:none">
+      <div class="ov-title">Únete al drop 🔥</div>
+      <div class="ov-sub">Crea tu cuenta y accede a drops exclusivos.</div>
+      <div id="regSuccess" class="success-msg">¡Cuenta creada! Ya puedes iniciar sesión.</div>
+      <div id="regError" class="error-msg">Ese correo ya está registrado.</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" id="regName" placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label>Apellido</label>
+          <input type="text" id="regLast" placeholder="Tu apellido">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Correo electrónico</label>
+        <input type="email" id="regEmail" placeholder="tu@email.com">
+      </div>
+      <div class="form-group">
+        <label>Contraseña</label>
+        <input type="password" id="regPass" placeholder="Mínimo 8 caracteres">
+      </div>
+      <div class="form-group">
+        <label>Confirmar contraseña</label>
+        <input type="password" id="regPass2" placeholder="Repite tu contraseña">
+      </div>
+      <button class="ov-btn" onclick="doRegister()">CREAR CUENTA →</button>
+    </div>
+  </div>
+</div>
+
+<!-- USER PROFILE MODAL -->
+<div class="ov-layer" id="profileModal" onclick="closeOvEv(event,'profileModal')">
+  <div class="ov-box" style="max-width:460px">
+    <button class="ov-close" onclick="closeOv('profileModal')">✕</button>
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px">
+      <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--cyan));display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:800;color:#fff" id="profileAvatar">U</div>
+      <div>
+        <div style="font-weight:700;font-size:1rem" id="profileName">Usuario</div>
+        <div style="font-size:.78rem;color:var(--muted)" id="profileEmail">email@email.com</div>
+      </div>
+    </div>
+    <div id="myOrdersList" style="margin-bottom:18px"></div>
+    <button class="ov-btn" style="background:var(--s2);border:1px solid var(--border);color:#ccc" onclick="doLogout()">Cerrar sesión</button>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="ov-layer" id="checkoutModal" onclick="closeOvEv(event,'checkoutModal')">
+  <div class="ov-box" style="max-width:560px">
+    <button class="ov-close" onclick="closeOv('checkoutModal')">✕</button>
+    <div id="checkoutContent"></div>
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div class="admin-overlay" id="adminPanel">
+  <div class="admin-header">
+    <div class="admin-logo"><em>MODA</em> URBANO admin <span class="admin-badge">PANEL</span></div>
+    <div class="admin-nav">
+      <button class="anav active" onclick="adminTab('dashboard',this)">Dashboard</button>
+      <button class="anav" onclick="adminTab('products',this)">Productos</button>
+      <button class="anav" onclick="adminTab('orders',this)">Pedidos</button>
+      <button class="anav" onclick="adminTab('users',this)">Usuarios</button>
+    </div>
+    <button class="ab secondary" onclick="closeAdmin()">✕ Cerrar panel</button>
+  </div>
+  <div class="admin-body">
+
+    <!-- DASHBOARD -->
+    <div class="admin-panel-tab active" id="tab-dashboard">
+      <div class="admin-title">Panel de <span>Control</span></div>
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-label">Pedidos Hoy</div><div class="stat-val pink" id="statOrders">0</div></div>
+        <div class="stat-card"><div class="stat-label">Ventas del Mes</div><div class="stat-val green" id="statSales">$0</div></div>
+        <div class="stat-card"><div class="stat-label">Usuarios</div><div class="stat-val cyan" id="statUsers">0</div></div>
+        <div class="stat-card"><div class="stat-label">Productos</div><div class="stat-val" id="statProducts">0</div></div>
+      </div>
+      <div class="admin-section">
+        <div class="admin-section-hdr"><h3>Últimos pedidos</h3></div>
+        <div class="table-wrap"><table class="admin-table" id="dashOrdersTable">
+          <thead><tr><th>ID</th><th>Cliente</th><th>Total</th><th>Estado</th><th>Fecha</th></tr></thead>
+          <tbody id="dashOrdersBody"></tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="admin-panel-tab" id="tab-products">
+      <div class="admin-title">Gestión de <span>Productos</span></div>
+      <div class="admin-section">
+        <div class="admin-section-hdr">
+          <h3>Agregar nuevo producto</h3>
+          <button class="ab secondary" onclick="toggleAddForm()">+ Nuevo producto</button>
+        </div>
+        <div id="addProductForm" style="display:none" class="add-product-form">
+          <div>
+            <label>Nombre del producto</label>
+            <input type="text" id="newName" placeholder="Ej: Jean Baggy Negro">
+          </div>
+          <div>
+            <label>Categoría</label>
+            <select id="newCat">
+              <option value="jeans-hombre">Jeans Hombre</option>
+              <option value="jeans-mujer">Jeans Mujer</option>
+              <option value="poleron">Poleron</option>
+              <option value="polera">Polera Oversize</option>
+              <option value="chaqueta">Chaqueta</option>
+              <option value="gorro">Gorro</option>
+              <option value="jockey">Jockey</option>
+              <option value="accesorio">Accesorio</option>
+            </select>
+          </div>
+          <div>
+            <label>Precio (CLP)</label>
+            <input type="number" id="newPrice" placeholder="49990">
+          </div>
+          <div>
+            <label>Badge</label>
+            <select id="newBadge">
+              <option value="">Sin badge</option>
+              <option value="new">NUEVO</option>
+              <option value="top">TOP VENTAS</option>
+              <option value="sale">OFERTA</option>
+            </select>
+          </div>
+          <div class="full">
+            <label>URL de imagen</label>
+            <input type="text" id="newImg" placeholder="https://images.unsplash.com/...">
+          </div>
+          <div class="full">
+            <label>Descripción</label>
+            <textarea id="newDesc" placeholder="Descripción del producto..."></textarea>
+          </div>
+          <div class="full">
+            <label>Tallas (separadas por coma)</label>
+            <input type="text" id="newSizes" placeholder="XS,S,M,L,XL,XXL">
+          </div>
+          <div class="full" style="display:flex;gap:10px">
+            <button class="ab" onclick="addProduct()">✓ Agregar producto</button>
+            <button class="ab secondary" onclick="toggleAddForm()">Cancelar</button>
+          </div>
+        </div>
+      </div>
+      <div class="admin-section">
+        <div class="admin-section-hdr"><h3>Catálogo de productos</h3><span style="font-size:.78rem;color:var(--muted)" id="productCount"></span></div>
+        <div class="table-wrap"><table class="admin-table">
+          <thead><tr><th>Img</th><th>Nombre</th><th>Categoría</th><th>Precio</th><th>Badge</th><th>Acciones</th></tr></thead>
+          <tbody id="productsTableBody"></tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <!-- ORDERS -->
+    <div class="admin-panel-tab" id="tab-orders">
+      <div class="admin-title">Gestión de <span>Pedidos</span></div>
+      <div class="admin-section">
+        <div class="admin-section-hdr"><h3>Todos los pedidos</h3></div>
+        <div class="table-wrap"><table class="admin-table">
+          <thead><tr><th>ID Pedido</th><th>Cliente</th><th>Productos</th><th>Total</th><th>Estado</th><th>Fecha</th></tr></thead>
+          <tbody id="ordersTableBody"></tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <!-- USERS -->
+    <div class="admin-panel-tab" id="tab-users">
+      <div class="admin-title">Gestión de <span>Usuarios</span></div>
+      <div class="admin-section">
+        <div class="admin-section-hdr"><h3>Usuarios registrados</h3></div>
+        <div class="table-wrap"><table class="admin-table users-table">
+          <thead><tr><th>Nombre</th><th>Email</th><th>Rol</th><th>Pedidos</th><th>Registro</th><th>Acciones</th></tr></thead>
+          <tbody id="usersTableBody"></tbody>
+        </table></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ══════════════════════════════════════
+// DATA
+// ══════════════════════════════════════
+let products = [
+  {id:1,cat:'jeans-hombre',name:'Jean Baggy Urbano Negro',price:52990,badge:'top',img:'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=700&q=80',desc:'Jean baggy de corte urbano, tela denim resistente 100% algodón. Fit holgado con detalles desgastados en las rodillas. Ideal para el look streetwear del día a día.',sizes:['XS','S','M','L','XL','XXL']},
+  {id:2,cat:'jeans-hombre',name:'Jean Cargo Y2K Azul Wash',price:59990,badge:'new',img:'https://images.unsplash.com/photo-1555689502-c4b22d76c56f?w=700&q=80',desc:'Jean de corte cargo con bolsillos laterales, tela denim washed con efecto envejecido. Estética Y2K pura.',sizes:['S','M','L','XL','XXL']},
+  {id:3,cat:'jeans-hombre',name:'Jean Wide Leg Desgastado',price:64990,badge:'',img:'https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=700&q=80',desc:'Pantalón de pierna ancha con look vintage. Detalles desgastados y costuras expuestas para el look Y2K.',sizes:['S','M','L','XL']},
+  {id:4,cat:'jeans-hombre',name:'Jean Slim Tapered Ripped',price:48990,badge:'sale',img:'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=700&q=80',desc:'Combinación perfecta entre slim y tapered con roturas estratégicas en rodillas y muslos.',sizes:['XS','S','M','L','XL']},
+  {id:5,cat:'jeans-hombre',name:'Jean Oversize Skate Gris',price:56990,badge:'top',img:'https://images.unsplash.com/photo-1604176354204-9268737828e4?w=700&q=80',desc:'Jean oversize inspirado en la cultura skate. Tela resistente y cómodo para el movimiento.',sizes:['S','M','L','XL','XXL']},
+  {id:6,cat:'jeans-mujer',name:'Jean Baggy Mujer Low Rise',price:54990,badge:'top',img:'https://images.unsplash.com/photo-1475180098004-ca77a66827be?w=700&q=80',desc:'Jean baggy de tiro bajo, la prenda icónica del estilo Y2K femenino. Corte holgado con acabados desgastados.',sizes:['XS','S','M','L','XL']},
+  {id:7,cat:'jeans-mujer',name:'Jean Wide Leg Mujer Blanco',price:61990,badge:'new',img:'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=700&q=80',desc:'Jean de pierna ancha en blanco roto. Perfecto para combinaciones con crop tops y accesorios Y2K.',sizes:['XS','S','M','L']},
+  {id:8,cat:'jeans-mujer',name:'Jean Mom Fit Vintage Mujer',price:49990,badge:'',img:'https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=700&q=80',desc:'Corte mom jeans de tiro alto con efecto vintage. Tela denim premium con stretch para mayor comodidad.',sizes:['XS','S','M','L','XL']},
+  {id:9,cat:'jeans-mujer',name:'Jean Cargo Mujer Y2K',price:67990,badge:'top',img:'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=700&q=80',desc:'Jean con bolsillos laterales estilo cargo, perfecto para el look Y2K urbano femenino.',sizes:['XS','S','M','L']},
+  {id:10,cat:'jeans-mujer',name:'Jean Flare Mujer 90s',price:58990,badge:'new',img:'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=700&q=80',desc:'Corte flare que regresa desde los 90s. Tiro alto y acampanado desde la rodilla.',sizes:['XS','S','M','L','XL']},
+  {id:11,cat:'poleron',name:'Poleron Oversize Negro Cyber',price:44990,badge:'top',img:'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=700&q=80',desc:'Poleron de algodón grueso con fit oversize. Estampado gráfico en la espalda con tipografía Y2K. Capucha doble capa.',sizes:['S','M','L','XL','XXL']},
+  {id:12,cat:'poleron',name:'Poleron Full Zip Cremallera',price:59990,badge:'new',img:'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=700&q=80',desc:'Poleron con cremallera completa y capucha. Tela french terry 380g, ideal para el invierno urbano.',sizes:['S','M','L','XL','XXL']},
+  {id:13,cat:'poleron',name:'Poleron Aesthetic Boxy',price:47990,badge:'',img:'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&q=80',desc:'Fit boxy cuadrado con caída perfecta. Bolsillo canguro y puños con elástico.',sizes:['XS','S','M','L','XL']},
+  {id:14,cat:'poleron',name:'Poleron Rayo Neon Y2K',price:52990,badge:'top',img:'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=700&q=80',desc:'Poleron con estampado de rayo neón, emblema del movimiento Y2K. Tela suave por dentro.',sizes:['S','M','L','XL']},
+  {id:15,cat:'poleron',name:'Poleron Half Zip Urbano',price:55990,badge:'new',img:'https://images.unsplash.com/photo-1467043237213-65f2da53396f?w=700&q=80',desc:'Media cremallera con cuello alzado. Fit ligeramente oversize con bolsillos ocultos en el lateral.',sizes:['S','M','L','XL','XXL']},
+  {id:16,cat:'polera',name:'Polera Oversize Boxy Negra',price:28990,badge:'top',img:'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=700&q=80',desc:'Polera boxy de algodón 100% con corte cuadrado. Estampado gráfico Y2K en el pecho. Unisex.',sizes:['XS','S','M','L','XL','XXL']},
+  {id:17,cat:'polera',name:'Polera Gráfica Cyber Print',price:32990,badge:'new',img:'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=700&q=80',desc:'Estampado digital de alta resolución con motivos cyber futuristas. Algodón ring-spun premium.',sizes:['XS','S','M','L','XL']},
+  {id:18,cat:'polera',name:'Polera Tie-Dye Oversize',price:34990,badge:'',img:'https://images.unsplash.com/photo-1533659828870-95ee305cee3e?w=700&q=80',desc:'Técnica tie-dye artesanal en colores neón. Cada prenda es única. Fit oversize relajado.',sizes:['S','M','L','XL']},
+  {id:19,cat:'polera',name:'Polera Mujer Crop Boxy Y2K',price:27990,badge:'top',img:'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=700&q=80',desc:'Crop top con largo hasta la cintura, corte boxy. Perfecto para combinar con jeans de tiro bajo.',sizes:['XS','S','M','L']},
+  {id:20,cat:'polera',name:'Polera Vintage Acid Wash',price:35990,badge:'new',img:'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=700&q=80',desc:'Efecto acid wash vintage que evoca los 90s. Tela pesada oversize con cuello redondo caído.',sizes:['XS','S','M','L','XL','XXL']},
+  {id:21,cat:'chaqueta',name:'Chaqueta Bomber Y2K Negra',price:89990,badge:'top',img:'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=700&q=80',desc:'Bomber jacket con tela satinada exterior y forro polar. Bordados Y2K en el pecho y espalda.',sizes:['S','M','L','XL','XXL']},
+  {id:22,cat:'chaqueta',name:'Chaqueta Cargo Oversize',price:94990,badge:'new',img:'https://images.unsplash.com/photo-1548126032-079a0fb0099d?w=700&q=80',desc:'Chaqueta estilo cargo con múltiples bolsillos. Tela técnica resistente al viento.',sizes:['S','M','L','XL']},
+  {id:23,cat:'chaqueta',name:'Chaqueta Denim Vintage',price:79990,badge:'',img:'https://images.unsplash.com/photo-1523205771623-e0faa4d2813d?w=700&q=80',desc:'Chaqueta denim de corte oversized con lavado vintage. Ideal para layering.',sizes:['XS','S','M','L','XL','XXL']},
+  {id:24,cat:'chaqueta',name:'Parka Técnica Urban Y2K',price:119990,badge:'top',img:'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=700&q=80',desc:'Parka larga con capucha desmontable. Relleno sintético y tela exterior impermeable.',sizes:['S','M','L','XL']},
+  {id:25,cat:'chaqueta',name:'Chaqueta Moto Cuero Cyber',price:109990,badge:'new',img:'https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=700&q=80',desc:'Chaqueta estilo moto en cuero sintético premium. Cremalleras asimétricas y hebillas metálicas.',sizes:['XS','S','M','L','XL']},
+  {id:26,cat:'gorro',name:'Gorro Rayo Neón Y2K',price:18990,badge:'top',img:'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=700&q=80',desc:'Gorro tejido con bordado de rayo en hilo neón. Tela acrílica suave y elástica. Unisex.',sizes:['Talla Única']},
+  {id:27,cat:'gorro',name:'Gorro Tela Araña Cyber',price:18990,badge:'',img:'https://images.unsplash.com/photo-1521369909029-2afed882baee?w=700&q=80',desc:'Diseño de telaraña bordado en hilo plateado sobre gorro negro. Estética dark cyber.',sizes:['Talla Única']},
+  {id:28,cat:'gorro',name:'Gorro Beanie Oversize Knit',price:22990,badge:'new',img:'https://images.unsplash.com/photo-1574180566232-aaad1b5b8450?w=700&q=80',desc:'Gorro tejido de punto con caída relajada. Extra largo para doblar o usar largo.',sizes:['Talla Única']},
+  {id:29,cat:'gorro',name:'Gorro Pom Pom Y2K Rosa',price:19990,badge:'',img:'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=700&q=80',desc:'Gorro con pompón en la punta. Colores pastel inspirados en el Y2K pop.',sizes:['Talla Única']},
+  {id:30,cat:'gorro',name:'Gorro Personalizado Custom',price:24990,badge:'top',img:'https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=700&q=80',desc:'Gorro con tu nombre o texto bordado. Indica el texto al comprar. Producción 5-7 días hábiles.',sizes:['Talla Única']},
+  {id:31,cat:'jockey',name:'Jockey Trucker Y2K Logo',price:22990,badge:'top',img:'https://images.unsplash.com/photo-1534215754734-18e55d13e346?w=700&q=80',desc:'Gorra trucker con malla trasera y frente estructurado. Logo Y2K bordado. Ajuste snapback.',sizes:['Talla Única']},
+  {id:32,cat:'jockey',name:'Jockey Bucket Hat Cyber',price:24990,badge:'new',img:'https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=700&q=80',desc:'Bucket hat de tela técnica con detalle reflectante en el borde. Ala media ancha. Unisex.',sizes:['S/M','L/XL']},
+  {id:33,cat:'jockey',name:'Jockey Dad Hat Washed',price:20990,badge:'',img:'https://images.unsplash.com/photo-1583394293882-9e66a53ddfa9?w=700&q=80',desc:'Gorra estilo dad hat con lavado vintage. Sin estructura, caída natural. Cierre metálico ajustable.',sizes:['Talla Única']},
+  {id:34,cat:'jockey',name:'Jockey Snapback Flat Brim',price:26990,badge:'top',img:'https://images.unsplash.com/photo-1588169770702-04a92d8a69f2?w=700&q=80',desc:'Gorra con visera plana y cierre snapback. Bordado lateral con tipografía Y2K.',sizes:['Talla Única']},
+  {id:35,cat:'jockey',name:'Jockey Distressed Vintage',price:23990,badge:'',img:'https://images.unsplash.com/photo-1565084888279-aca607ecce0c?w=700&q=80',desc:'Gorra con efecto desgastado vintage. Panel frontal bordado con grafiti Y2K en colores flúo.',sizes:['Talla Única']},
+  {id:36,cat:'accesorio',name:'Cinturón Cadena Metálico',price:15990,badge:'top',img:'https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=700&q=80',desc:'Cinturón de cadena doble en metal plateado. Longitud ajustable. Accesorio icónico del estilo Y2K.',sizes:['Talla Única']},
+  {id:37,cat:'accesorio',name:'Gafas Matrix Rectangulares',price:19990,badge:'new',img:'https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=700&q=80',desc:'Montura metálica rectangular estilo Matrix. Lentes ahumadas en degradado. UV400 protection.',sizes:['Talla Única']},
+  {id:38,cat:'accesorio',name:'Riñonera Tela Técnica Y2K',price:29990,badge:'',img:'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=700&q=80',desc:'Riñonera en tela técnica con múltiples compartimentos. Correa ajustable.',sizes:['Talla Única']},
+  {id:39,cat:'accesorio',name:'Collar Chunky Chain Plata',price:22990,badge:'top',img:'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=700&q=80',desc:'Collar de cadena gruesa en plata titanio. Anti-alérgico. Cierre de mosquetón.',sizes:['45cm','55cm','65cm']},
+  {id:40,cat:'accesorio',name:'Mochila Streetwear Negra',price:39990,badge:'new',img:'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=700&q=80',desc:'Mochila de tela técnica con logo Y2K. Varios compartimentos y asas reforzadas.',sizes:['Talla Única']}
+];
+
+// ══════════════════════════════════════
+// USER SYSTEM — con localStorage, validación de email y hash de contraseña
+// ══════════════════════════════════════
+
+// — Hash simple (FNV-1a 32bit) para no guardar contraseñas en texto plano —
+function hashPass(str) {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619) >>> 0;
+  }
+  return h.toString(16);
+}
+
+// — Validación de formato de email —
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+}
+
+// — Usuarios predeterminados (solo se crean si localStorage está vacío) —
+const DEFAULT_USERS = [
+  {id:1, name:'Admin', last:'Y2K', email:'admin@modaurbano.cl', passHash: hashPass('admin123'), role:'admin', date:'2024-01-15', orders:[]},
+  {id:2, name:'Cliente', last:'Demo', email:'cliente@y2k.cl', passHash: hashPass('cliente123'), role:'cliente', date:'2025-03-20', orders:[]}
+];
+
+// — Carga y guardado en localStorage —
+function loadUsers() {
+  try {
+    const stored = localStorage.getItem('mu_users');
+    return stored ? JSON.parse(stored) : JSON.parse(JSON.stringify(DEFAULT_USERS));
+  } catch(e) { return JSON.parse(JSON.stringify(DEFAULT_USERS)); }
+}
+function saveUsers() {
+  try { localStorage.setItem('mu_users', JSON.stringify(users)); } catch(e) {}
+}
+function loadSession() {
+  try {
+    const s = localStorage.getItem('mu_session');
+    if (!s) return null;
+    const { id } = JSON.parse(s);
+    return users.find(u => u.id === id) || null;
+  } catch(e) { return null; }
+}
+function saveSession(user) {
+  try {
+    if (user) localStorage.setItem('mu_session', JSON.stringify({id: user.id}));
+    else localStorage.removeItem('mu_session');
+  } catch(e) {}
+}
+
+let users = loadUsers();
+let currentUser = loadSession();
+
+// — Restaurar estado de sesión al cargar la página —
+if (currentUser) { setTimeout(updateAuthBtn, 0); }
+
+function openAuth() {
+  if (currentUser) { openProfile(); return; }
+  openOv('authModal');
+}
+function switchAuthTab(tab) {
+  document.getElementById('tabLogin').classList.toggle('active', tab==='login');
+  document.getElementById('tabReg').classList.toggle('active', tab==='register');
+  document.getElementById('loginPanel').style.display = tab==='login' ? '' : 'none';
+  document.getElementById('registerPanel').style.display = tab==='register' ? '' : 'none';
+  document.getElementById('loginError').classList.remove('show');
+  document.getElementById('regError').classList.remove('show');
+  document.getElementById('regSuccess').classList.remove('show');
+}
+function doLogin() {
+  const email = document.getElementById('loginEmail').value.trim().toLowerCase();
+  const pass = document.getElementById('loginPass').value;
+  const user = users.find(u => u.email.toLowerCase()===email && u.passHash===hashPass(pass));
+  if (!user) { document.getElementById('loginError').classList.add('show'); return; }
+  currentUser = user;
+  saveSession(user);
+  closeOv('authModal');
+  updateAuthBtn();
+  showToast(`¡Bienvenido, ${user.name}! 👋`, 'success');
+  if (user.role==='admin') { setTimeout(()=>{ if(confirm('¿Abrir el panel de administración?')) openAdmin(); }, 400); }
+}
+function doRegister() {
+  const name = document.getElementById('regName').value.trim();
+  const last = document.getElementById('regLast').value.trim();
+  const email = document.getElementById('regEmail').value.trim().toLowerCase();
+  const pass = document.getElementById('regPass').value;
+  const pass2 = document.getElementById('regPass2').value;
+  const errEl = document.getElementById('regError');
+  errEl.classList.remove('show');
+  document.getElementById('regSuccess').classList.remove('show');
+
+  // Validaciones
+  if (!name || !email || !pass) { errEl.textContent='Completa todos los campos obligatorios.'; errEl.classList.add('show'); return; }
+  if (!isValidEmail(email)) { errEl.textContent='Ingresa un correo electrónico válido.'; errEl.classList.add('show'); return; }
+  if (pass !== pass2) { errEl.textContent='Las contraseñas no coinciden.'; errEl.classList.add('show'); return; }
+  if (pass.length < 6) { errEl.textContent='La contraseña debe tener al menos 6 caracteres.'; errEl.classList.add('show'); return; }
+  if (users.find(u => u.email.toLowerCase()===email)) { errEl.textContent='Ese correo ya está registrado.'; errEl.classList.add('show'); return; }
+
+  const newUser = {id: Date.now(), name, last, email, passHash: hashPass(pass), role:'cliente', date: new Date().toISOString().split('T')[0], orders:[]};
+  users.push(newUser);
+  saveUsers(); // ← persiste en localStorage
+  document.getElementById('regSuccess').classList.add('show');
+  setTimeout(()=>switchAuthTab('login'), 1800);
+}
+function doLogout() {
+  currentUser = null;
+  saveSession(null);
+  closeOv('profileModal');
+  updateAuthBtn();
+  showToast('Sesión cerrada 👋','info');
+}
+function updateAuthBtn() {
+  const btn = document.getElementById('authBtn');
+  if (currentUser) {
+    btn.textContent = currentUser.name + (currentUser.role==='admin'?' 🔑':'');
+    btn.classList.add('logged');
+  } else {
+    btn.textContent = 'Iniciar Sesión';
+    btn.classList.remove('logged');
+  }
+}
+function openProfile() {
+  document.getElementById('profileAvatar').textContent = currentUser.name[0].toUpperCase();
+  document.getElementById('profileName').textContent = currentUser.name + ' ' + currentUser.last;
+  document.getElementById('profileEmail').textContent = currentUser.email;
+  const myOrders = orders.filter(o=>o.userId===currentUser.id);
+  const el = document.getElementById('myOrdersList');
+  if (!myOrders.length) {
+    el.innerHTML = '<p style="color:var(--muted);font-size:.84rem;text-align:center;padding:16px 0">Aún no tienes pedidos.</p>';
+  } else {
+    el.innerHTML = '<div style="font-size:.72rem;font-weight:800;letter-spacing:1.5px;color:var(--muted);margin-bottom:10px;text-transform:uppercase">Mis pedidos</div>' +
+      myOrders.map(o=>`<div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center">
+        <div><div style="font-size:.82rem;font-weight:700">#${o.id}</div><div style="font-size:.74rem;color:var(--muted)">${o.date} · ${o.items.length} producto(s)</div></div>
+        <div style="text-align:right"><div style="font-size:.88rem;font-weight:700;color:var(--pink)">$${o.total.toLocaleString('es-CL')}</div><div class="badge-tag ${o.status}">${o.status}</div></div>
+      </div>`).join('');
+  }
+  openOv('profileModal');
+}
+
+// ══════════════════════════════════════
+// CART STATE
+// ══════════════════════════════════════
+let cartItems = [];
+let currentProduct = null;
+let selectedSize = '';
+let discountCode = '';
+let discountPct = 0;
+const DISCOUNT_CODES = { 'MU10': 10, 'CYBER20': 20, 'DROP15': 15 };
+
+// ══════════════════════════════════════
+// PRODUCTS RENDER
+// ══════════════════════════════════════
+function renderProducts(cat) {
+  const filtered = cat==='all' ? products : products.filter(p=>p.cat===cat);
+  const grid = document.getElementById('pgrid');
+  if (!filtered.length) { grid.innerHTML='<p style="color:var(--muted);grid-column:1/-1;text-align:center;padding:40px">No hay productos en esta categoría.</p>'; return; }
+  grid.innerHTML = filtered.map(p=>`
+    <div class="pcard" onclick="openModal(${p.id})">
+      <div class="pimgw">
+        <img src="${p.img}" alt="${p.name}" loading="lazy">
+        ${p.badge==='top'?'<span class="badge top">TOP VENTAS</span>':p.badge==='new'?'<span class="badge new">NUEVO</span>':p.badge==='sale'?'<span class="badge sale">OFERTA</span>':''}
+        <div class="qadd">+ VER PRODUCTO</div>
+      </div>
+      <div class="pinfo">
+        <div class="pcat">${catLabel(p.cat)}</div>
+        <div class="pname">${p.name}</div>
+        <div class="pprice">$${p.price.toLocaleString('es-CL')}</div>
+      </div>
+    </div>`).join('');
+}
+function catLabel(cat) {
+  const m={'jeans-hombre':'Jeans Hombre','jeans-mujer':'Jeans Mujer','poleron':'Poleron','polera':'Polera Oversize','chaqueta':'Chaqueta','gorro':'Gorro','jockey':'Jockey','accesorio':'Accesorio'};
+  return m[cat]||cat;
+}
+function filterCat(cat, btn) {
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderProducts(cat);
+  document.getElementById('productos').scrollIntoView({behavior:'smooth',block:'start'});
+  return false;
+}
+
+// ══════════════════════════════════════
+// MODAL
+// ══════════════════════════════════════
+function openModal(id) {
+  const p = products.find(x=>x.id===id);
+  if (!p) return;
+  currentProduct = p; selectedSize = '';
+  document.getElementById('mImg').src = p.img;
+  document.getElementById('mCat').textContent = catLabel(p.cat);
+  document.getElementById('mName').textContent = p.name;
+  document.getElementById('mPrice').textContent = '$'+p.price.toLocaleString('es-CL');
+  document.getElementById('mDesc').textContent = p.desc;
+  document.getElementById('mSizes').innerHTML = p.sizes.map(s=>`<button class="sz" onclick="selectSize(this,'${s}')">${s}</button>`).join('');
+  openOv('modalOv', false);
+  document.getElementById('modalOv').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function selectSize(btn, size) {
+  document.querySelectorAll('.sz').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  selectedSize = size;
+}
+function closeModalEv(e) { if(e.target===document.getElementById('modalOv')) closeModalDirect(); }
+function closeModalDirect() {
+  document.getElementById('modalOv').classList.remove('open');
+  document.body.style.overflow='';
+  currentProduct = null; selectedSize='';
+}
+
+// ══════════════════════════════════════
+// CART
+// ══════════════════════════════════════
+function addToCart() {
+  if (!currentProduct) return;
+  if (!selectedSize && currentProduct.sizes.length>1) {
+    const el = document.getElementById('mSizes');
+    el.style.outline='1.5px solid var(--pink)'; el.style.borderRadius='8px'; el.style.padding='6px';
+    setTimeout(()=>{el.style.outline='';el.style.padding='';},1800);
+    return;
+  }
+  const sz = selectedSize||currentProduct.sizes[0];
+  const existing = cartItems.find(i=>i.id===currentProduct.id && i.size===sz);
+  if (existing) existing.qty++;
+  else cartItems.push({...currentProduct, size:sz, qty:1});
+  closeModalDirect();
+  updateCart();
+  toggleCart();
+}
+function removeItem(id, size) {
+  cartItems = cartItems.filter(i=>!(i.id===id && i.size===size));
+  updateCart();
+}
+function changeQty(id, size, delta) {
+  const item = cartItems.find(i=>i.id===id && i.size===size);
+  if (!item) return;
+  item.qty += delta;
+  if (item.qty <= 0) cartItems = cartItems.filter(i=>!(i.id===id && i.size===size));
+  updateCart();
+}
+function applyDiscount() {
+  const code = document.getElementById('discountInput').value.trim().toUpperCase();
+  const el = document.getElementById('discountMsg');
+  if (DISCOUNT_CODES[code]) {
+    discountCode = code; discountPct = DISCOUNT_CODES[code];
+    el.className='discount-ok'; el.textContent=`✓ Código "${code}" aplicado: ${discountPct}% de descuento`;
+    updateCart();
+  } else {
+    discountCode=''; discountPct=0;
+    el.className='error-msg show'; el.textContent='Código inválido. Prueba: Y2K10, CYBER20 o DROP15';
+    updateCart();
+  }
+}
+function updateCart() {
+  const count = cartItems.reduce((a,i)=>a+i.qty,0);
+  const subtotal = cartItems.reduce((a,i)=>a+i.price*i.qty,0);
+  const discAmt = Math.round(subtotal * discountPct / 100);
+  const total = subtotal - discAmt;
+  document.getElementById('cartCount').textContent = count;
+  document.getElementById('cartItemLabel').textContent = count;
+  document.getElementById('cartSubtotal').textContent = '$'+subtotal.toLocaleString('es-CL');
+  document.getElementById('cartTotal').textContent = '$'+total.toLocaleString('es-CL');
+  const dr = document.getElementById('discountRow');
+  if (discAmt>0) {
+    dr.style.display='flex';
+    document.getElementById('discountLabel').textContent = `Descuento (${discountPct}%)`;
+    document.getElementById('discountAmt').textContent = '-$'+discAmt.toLocaleString('es-CL');
+  } else { dr.style.display='none'; }
+  const body = document.getElementById('cartBody');
+  if (!cartItems.length) {
+    body.className='cart-empty-state';
+    body.innerHTML='<span style="font-size:2.5rem">🛒</span><span>Tu carrito está vacío</span><button class="btn-w" style="font-size:.78rem;padding:10px 22px" onclick="toggleCart()">Seguir comprando</button>';
+  } else {
+    body.className='cart-items';
+    body.innerHTML = cartItems.map(i=>`
+      <div class="cart-item">
+        <img class="ci-img" src="${i.img}" alt="${i.name}">
+        <div class="ci-info">
+          <div class="ci-name">${i.name}</div>
+          <div class="ci-sz">Talla: ${i.size}</div>
+          <div class="ci-bottom">
+            <div class="ci-qty">
+              <button onclick="changeQty(${i.id},'${i.size}',-1)">−</button>
+              <span>${i.qty}</span>
+              <button onclick="changeQty(${i.id},'${i.size}',1)">+</button>
+            </div>
+            <span class="ci-price">$${(i.price*i.qty).toLocaleString('es-CL')}</span>
+            <button class="ci-rm" onclick="removeItem(${i.id},'${i.size}')">✕</button>
+          </div>
+        </div>
+      </div>`).join('');
+  }
+}
+function toggleCart() {
+  document.getElementById('cartDrw').classList.toggle('open');
+  document.getElementById('cartOv').classList.toggle('open');
+  document.body.style.overflow = document.getElementById('cartDrw').classList.contains('open') ? 'hidden' : '';
+}
+
+// ══════════════════════════════════════
+// OVERLAY HELPERS
+// ══════════════════════════════════════
+function openOv(id, blockScroll=true) {
+  document.getElementById(id).classList.add('open');
+  if(blockScroll) document.body.style.overflow='hidden';
+}
+function closeOv(id) {
+  document.getElementById(id).classList.remove('open');
+  document.body.style.overflow='';
+}
+function closeOvEv(e, id) {
+  if(e.target===document.getElementById(id)) closeOv(id);
+}
+
+// ══════════════════════════════════════
+// CHECKOUT (WEBPAY SIMULATION)
+// ══════════════════════════════════════
+let checkoutStep = 1;
+let orders = [];
+
+function openCheckout() {
+  if (!currentUser) {
+    toggleCart();
+    setTimeout(()=>openOv('authModal'),200);
+    showToast('Inicia sesión para comprar 🔐','info');
+    return;
+  }
+  if (!cartItems.length) return;
+  checkoutStep = 1;
+  renderCheckout();
+  toggleCart();
+  setTimeout(()=>openOv('checkoutModal'),200);
+}
+function renderCheckout() {
+  const subtotal = cartItems.reduce((a,i)=>a+i.price*i.qty,0);
+  const discAmt = Math.round(subtotal*discountPct/100);
+  const total = subtotal - discAmt;
+  const el = document.getElementById('checkoutContent');
+  if (checkoutStep===1) {
+    el.innerHTML=`
+      <div class="ov-title">Finalizar compra</div>
+      <div class="checkout-steps">
+        <div class="cs active">1. DATOS</div>
+        <div class="cs">2. PAGO</div>
+        <div class="cs">3. CONFIRMACIÓN</div>
+      </div>
+      <div class="form-group">
+        <label>Nombre completo</label>
+        <input type="text" id="chkName" value="${currentUser.name} ${currentUser.last}" placeholder="Tu nombre">
+      </div>
+      <div class="form-group">
+        <label>Correo electrónico</label>
+        <input type="email" id="chkEmail" value="${currentUser.email}">
+      </div>
+      <div class="form-group">
+        <label>Dirección de envío</label>
+        <input type="text" id="chkAddr" placeholder="Calle, número, depto...">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Ciudad</label>
+          <input type="text" id="chkCity" placeholder="Santiago">
+        </div>
+        <div class="form-group">
+          <label>Región</label>
+          <select id="chkRegion">
+            <option>Región Metropolitana</option><option>Valparaíso</option><option>Biobío</option><option>La Araucanía</option><option>Los Lagos</option><option>Otra región</option>
+          </select>
+        </div>
+      </div>
+      <div class="order-items-mini">
+        ${cartItems.map(i=>`<div class="oi-row"><span>${i.name} (${i.size}) x${i.qty}</span><span>$${(i.price*i.qty).toLocaleString('es-CL')}</span></div>`).join('')}
+        ${discAmt>0?`<div class="oi-row" style="color:var(--green)"><span>Descuento ${discountPct}%</span><span>-$${discAmt.toLocaleString('es-CL')}</span></div>`:''}
+        <div class="oi-row oi-total"><span>Total</span><span>$${total.toLocaleString('es-CL')}</span></div>
+      </div>
+      <button class="ov-btn" onclick="checkoutNext()">CONTINUAR AL PAGO →</button>`;
+  } else if (checkoutStep===2) {
+    el.innerHTML=`
+      <div class="ov-title">Pago seguro</div>
+      <div class="checkout-steps">
+        <div class="cs done">✓ DATOS</div>
+        <div class="cs active">2. PAGO</div>
+        <div class="cs">3. CONFIRMACIÓN</div>
+      </div>
+      <div class="webpay-card">
+        <div class="webpay-logo">Web<span>pay</span> Plus</div>
+        <div class="webpay-sub">Pago 100% seguro · Transbank Chile</div>
+        <div class="card-input-wrap">
+          <label>Número de tarjeta</label>
+          <input type="text" maxlength="19" placeholder="1234 5678 9012 3456" oninput="fmtCard(this)">
+          <div class="card-row">
+            <div>
+              <label>Vencimiento</label>
+              <input type="text" maxlength="5" placeholder="MM/AA" oninput="fmtExp(this)">
+            </div>
+            <div>
+              <label>CVV</label>
+              <input type="text" maxlength="3" placeholder="123">
+            </div>
+          </div>
+          <label>Nombre en la tarjeta</label>
+          <input type="text" placeholder="COMO APARECE EN LA TARJETA" style="text-transform:uppercase">
+        </div>
+        <div class="webpay-security">🔒 Encriptación SSL 256-bit · Certificado PCI DSS</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;font-size:.76rem;color:var(--muted);margin:0 0 8px">
+        <span>💳 Total a pagar:</span><strong style="color:#fff;font-size:.9rem">$${total.toLocaleString('es-CL')}</strong>
+      </div>
+      <button class="confirm-btn" onclick="checkoutNext()">PAGAR AHORA →</button>`;
+  } else if (checkoutStep===3) {
+    el.innerHTML=`
+      <div class="order-success">
+        <span class="success-icon">🎉</span>
+        <div class="ov-title">¡Pedido confirmado!</div>
+        <p style="color:var(--muted);font-size:.86rem;margin:8px 0 16px">Tu pago fue procesado con éxito. Recibirás un correo de confirmación pronto.</p>
+        <div class="order-num">
+          <div>Número de pedido</div>
+          <strong>#Y2K-${String(orders.length+1000).padStart(4,'0')}</strong>
+        </div>
+        <div class="order-items-mini" style="text-align:left">
+          ${cartItems.map(i=>`<div class="oi-row"><span>${i.name} (${i.size}) x${i.qty}</span><span>$${(i.price*i.qty).toLocaleString('es-CL')}</span></div>`).join('')}
+          <div class="oi-row oi-total"><span>Total pagado</span><span>$${total.toLocaleString('es-CL')}</span></div>
+        </div>
+        <div style="font-size:.78rem;color:var(--muted);margin:12px 0">📦 Entrega estimada: 3-5 días hábiles</div>
+        <button class="ov-btn" onclick="finishOrder()">VOLVER A LA TIENDA</button>
+      </div>`;
+    // Save order
+    const newOrder = {
+      id: 'Y2K-'+String(orders.length+1000).padStart(4,'0'),
+      userId: currentUser.id,
+      client: currentUser.name+' '+currentUser.last,
+      email: currentUser.email,
+      items: [...cartItems],
+      total,
+      status: 'procesando',
+      date: new Date().toLocaleDateString('es-CL')
+    };
+    orders.push(newOrder);
+    currentUser.orders.push(newOrder.id);
+  }
+}
+function checkoutNext() {
+  const addr = document.getElementById('chkAddr');
+  if (checkoutStep===1 && addr && !addr.value.trim()) {
+    addr.style.borderColor='var(--pink)';
+    setTimeout(()=>addr.style.borderColor='',1500);
+    return;
+  }
+  checkoutStep++;
+  renderCheckout();
+}
+function finishOrder() {
+  cartItems = []; discountCode=''; discountPct=0;
+  document.getElementById('discountInput').value='';
+  document.getElementById('discountMsg').textContent='';
+  document.getElementById('discountMsg').className='';
+  updateCart();
+  closeOv('checkoutModal');
+  showToast('¡Gracias por tu compra! 🎉','success');
+}
+function fmtCard(el) {
+  let v = el.value.replace(/\D/g,'').substring(0,16);
+  el.value = v.replace(/(.{4})/g,'$1 ').trim();
+}
+function fmtExp(el) {
+  let v = el.value.replace(/\D/g,'').substring(0,4);
+  if(v.length>2) v=v.substring(0,2)+'/'+v.substring(2);
+  el.value=v;
+}
+
+// ══════════════════════════════════════
+// ADMIN
+// ══════════════════════════════════════
+function openAdmin() {
+  if (!currentUser || currentUser.role!=='admin') {
+    openOv('authModal');
+    showToast('Acceso solo para administradores 🔒','error');
+    return;
+  }
+  renderAdminDashboard();
+  renderProductsTable();
+  renderOrdersTable();
+  renderUsersTable();
+  document.getElementById('adminPanel').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeAdmin() {
+  document.getElementById('adminPanel').classList.remove('open');
+  document.body.style.overflow='';
+}
+function adminTab(tab, btn) {
+  document.querySelectorAll('.admin-panel-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.anav').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+tab).classList.add('active');
+  btn.classList.add('active');
+  if(tab==='dashboard') renderAdminDashboard();
+  if(tab==='products') renderProductsTable();
+  if(tab==='orders') renderOrdersTable();
+  if(tab==='users') renderUsersTable();
+}
+function renderAdminDashboard() {
+  const totalSales = orders.reduce((a,o)=>a+o.total,0);
+  document.getElementById('statOrders').textContent = orders.length;
+  document.getElementById('statSales').textContent = '$'+totalSales.toLocaleString('es-CL');
+  document.getElementById('statUsers').textContent = users.length;
+  document.getElementById('statProducts').textContent = products.length;
+  const tbody = document.getElementById('dashOrdersBody');
+  if (!orders.length) { tbody.innerHTML='<tr><td colspan="5" style="text-align:center;color:var(--muted);padding:24px">No hay pedidos aún</td></tr>'; return; }
+  tbody.innerHTML = orders.slice(-8).reverse().map(o=>`
+    <tr>
+      <td><strong>#${o.id}</strong></td>
+      <td>${o.client}</td>
+      <td style="color:var(--pink);font-weight:700">$${o.total.toLocaleString('es-CL')}</td>
+      <td><span class="badge-tag ${o.status}">${o.status}</span></td>
+      <td style="color:var(--muted)">${o.date}</td>
+    </tr>`).join('');
+}
+function renderProductsTable() {
+  document.getElementById('productCount').textContent = products.length + ' productos';
+  document.getElementById('productsTableBody').innerHTML = products.map(p=>`
+    <tr>
+      <td><img class="admin-img-thumb" src="${p.img}" alt=""></td>
+      <td><input class="edit-input wide" value="${p.name}" onchange="editProduct(${p.id},'name',this.value)"></td>
+      <td>
+        <select class="status-select" onchange="editProduct(${p.id},'cat',this.value)">
+          ${['jeans-hombre','jeans-mujer','poleron','polera','chaqueta','gorro','jockey','accesorio'].map(c=>`<option value="${c}" ${p.cat===c?'selected':''}>${catLabel(c)}</option>`).join('')}
+        </select>
+      </td>
+      <td><input class="edit-input" type="number" value="${p.price}" onchange="editProduct(${p.id},'price',parseInt(this.value))"></td>
+      <td>
+        <select class="status-select" onchange="editProduct(${p.id},'badge',this.value)">
+          <option value="" ${p.badge===''?'selected':''}>Sin badge</option>
+          <option value="new" ${p.badge==='new'?'selected':''}>NUEVO</option>
+          <option value="top" ${p.badge==='top'?'selected':''}>TOP</option>
+          <option value="sale" ${p.badge==='sale'?'selected':''}>OFERTA</option>
+        </select>
+      </td>
+      <td><button class="ab danger" onclick="deleteProduct(${p.id})">Eliminar</button></td>
+    </tr>`).join('');
+}
+function editProduct(id, field, val) {
+  const p = products.find(x=>x.id===id);
+  if (p) { p[field]=val; renderProducts(document.querySelector('.tab.active')?.textContent.toLowerCase().includes('todo') ? 'all' : p.cat); showToast('Producto actualizado ✓','success'); }
+}
+function deleteProduct(id) {
+  if (!confirm('¿Eliminar este producto?')) return;
+  products = products.filter(p=>p.id!==id);
+  renderProductsTable();
+  renderProducts('all');
+  showToast('Producto eliminado','info');
+}
+function toggleAddForm() {
+  const f = document.getElementById('addProductForm');
+  f.style.display = f.style.display==='none' ? '' : 'none';
+}
+function addProduct() {
+  const name = document.getElementById('newName').value.trim();
+  const cat = document.getElementById('newCat').value;
+  const price = parseInt(document.getElementById('newPrice').value)||0;
+  const badge = document.getElementById('newBadge').value;
+  const img = document.getElementById('newImg').value.trim();
+  const desc = document.getElementById('newDesc').value.trim();
+  const sizesRaw = document.getElementById('newSizes').value.trim();
+  if (!name||!price||!img) { showToast('Completa nombre, precio e imagen','error'); return; }
+  const sizes = sizesRaw ? sizesRaw.split(',').map(s=>s.trim()).filter(Boolean) : ['Talla Única'];
+  const newId = Math.max(...products.map(p=>p.id))+1;
+  products.push({id:newId,cat,name,price,badge,img,desc,sizes});
+  toggleAddForm();
+  renderProductsTable();
+  renderProducts('all');
+  showToast('Producto agregado ✓','success');
+  ['newName','newPrice','newImg','newDesc','newSizes'].forEach(id=>{ document.getElementById(id).value=''; });
+}
+function renderOrdersTable() {
+  const tbody = document.getElementById('ordersTableBody');
+  if (!orders.length) { tbody.innerHTML='<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:24px">No hay pedidos registrados</td></tr>'; return; }
+  tbody.innerHTML = orders.map((o,idx)=>`
+    <tr>
+      <td><strong>#${o.id}</strong></td>
+      <td>${o.client}<br><span style="font-size:.72rem;color:var(--muted)">${o.email}</span></td>
+      <td style="font-size:.76rem;color:var(--muted)">${o.items.map(i=>i.name.split(' ').slice(0,3).join(' ')).join(', ')}</td>
+      <td style="color:var(--pink);font-weight:700">$${o.total.toLocaleString('es-CL')}</td>
+      <td>
+        <select class="status-select ${o.status}" onchange="changeOrderStatus(${idx},this)">
+          <option value="pendiente" ${o.status==='pendiente'?'selected':''}>Pendiente</option>
+          <option value="procesando" ${o.status==='procesando'?'selected':''}>Procesando</option>
+          <option value="enviado" ${o.status==='enviado'?'selected':''}>Enviado</option>
+          <option value="entregado" ${o.status==='entregado'?'selected':''}>Entregado</option>
+          <option value="cancelado" ${o.status==='cancelado'?'selected':''}>Cancelado</option>
+        </select>
+      </td>
+      <td style="color:var(--muted)">${o.date}</td>
+    </tr>`).join('');
+}
+function changeOrderStatus(idx, sel) {
+  orders[idx].status = sel.value;
+  sel.className = 'status-select ' + sel.value;
+  showToast('Estado actualizado ✓','success');
+  renderAdminDashboard();
+}
+function renderUsersTable() {
+  document.getElementById('usersTableBody').innerHTML = users.map(u=>`
+    <tr>
+      <td>${u.name} ${u.last}</td>
+      <td style="color:var(--muted)">${u.email}</td>
+      <td><span class="role-tag ${u.role}">${u.role.toUpperCase()}</span></td>
+      <td>${u.orders.length}</td>
+      <td style="color:var(--muted)">${u.date}</td>
+      <td>
+        ${u.role!=='admin'?`<button class="ab green" onclick="promoteUser(${u.id})">Hacer admin</button>`:'<span style="color:var(--muted);font-size:.76rem">—</span>'}
+      </td>
+    </tr>`).join('');
+}
+function promoteUser(id) {
+  const u = users.find(x=>x.id===id);
+  if (u && confirm(`¿Hacer admin a ${u.name}?`)) {
+    u.role='admin';
+    saveUsers();
+    renderUsersTable();
+    showToast(`${u.name} ahora es admin 🔑`,'success');
+  }
+}
+
+// ══════════════════════════════════════
+// TOAST
+// ══════════════════════════════════════
+let toastTimer;
+function showToast(msg, type='info') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show ' + type;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>{ t.classList.remove('show'); }, 3200);
+}
+
+// ══════════════════════════════════════
+// ESC & SCROLL FADE
+// ══════════════════════════════════════
+document.addEventListener('keydown', e=>{
+  if (e.key==='Escape') {
+    closeModalDirect();
+    ['authModal','profileModal','checkoutModal'].forEach(id=>closeOv(id));
+    if(document.getElementById('cartDrw').classList.contains('open')) toggleCart();
+  }
+});
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target);} });
+},{threshold:.08});
+document.querySelectorAll('.fi-anim').forEach(el=>obs.observe(el));
+
+// ══════════════════════════════════════
+// INIT
+// ══════════════════════════════════════
+renderProducts('all');
+</script>
+</body>
+</html>
